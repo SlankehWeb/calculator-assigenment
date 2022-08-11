@@ -26,3 +26,21 @@ function calc()
     }
     console.log(result. value)
 }
+
+let ntError = document.getElementById('nt-error');
+function validateNumber(){
+    let nt = document.getElementById('field1').value;
+    if(!nt.match(/[0-9]$/)){
+        ntError.innerHTML = 'numbers only';
+        return false;
+    }
+
+}
+let nfError = document.getElementById('nf-error');
+function validateNumbers(){
+let nf = document.getElementById('field2').value;
+if(!nf.match(/[0-9]$/)){
+    nfError.innerHTML = 'numbers only';
+    return false;
+}
+}
